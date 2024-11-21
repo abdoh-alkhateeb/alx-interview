@@ -3,10 +3,8 @@
 Defines `rotate_2d_matrix`.
 """
 
-from typing import List
 
-
-def rotate_2d_matrix(matrix: List[List[int]]):
+def rotate_2d_matrix(matrix):
     """
     Rotates a matrix 90 degrees clockwise.
     """
