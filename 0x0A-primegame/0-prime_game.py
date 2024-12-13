@@ -8,6 +8,8 @@ def isWinner(x, nums):
     """
     Returns name of the player that won the most rounds.
     """
+    if x < 1:
+        return None
 
     ben_wins = 0
     maria_wins = 0
@@ -21,7 +23,7 @@ def isWinner(x, nums):
 
     for i in range(2, max_n + 1):
         for prime in primes:
-            if i % prime != 0:
+            if i % prime == 0:
                 break
         else:
             primes.append(i)
